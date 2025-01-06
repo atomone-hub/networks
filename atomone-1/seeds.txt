@@ -1,0 +1,4 @@
+8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656
+10ed1e176d874c8bb3c7c065685d2da6a4b86475@seed-atomone.ibs.team:16684
+ebc272824924ea1a27ea3183dd0b9ba713494f83@atomone-mainnet-seed.autostake.com:27396
+ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:29956

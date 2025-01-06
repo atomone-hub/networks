@@ -1,0 +1,2 @@
+9dac79c27e4dba77cb22b0b25933fee6c8121cf7@72.46.84.243:26656
+ebc272824924ea1a27ea3183dd0b9ba713494f83@atomone-mainnet-peer.autostake.com:27396

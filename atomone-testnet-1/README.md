@@ -5,6 +5,11 @@
 <!-- ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--09--25T14%3A58%3A860541899Z-red?style=for-the-badge) -->
 
  
+> [!NOTE]
+> The atomone-testnet-1 is a community initiative designed to test and validate the foundational components of the AtomOne blockchain.
+> Its primary purpose is to provide a controlled environment for validators, developers, and community members to explore, test and optimize network functionalities before their official deployment/release.
+> By participating in this testnet, participants can register their nodes in the genesis block, fine-tune their configurations, and help ensure the network's robustness and security.
+ 
 **Register in the Genesis**
 
 To register your validator node in the `genesis.json` you will need to provide a signed `gentx` with an initial delegation of at least `1000000uatone`. To create your own genesis transaction (`gentx`) you will have to choose the following parameters for your validator: `commission-rate` (>=0.05), `commission-max-rate`, `commission-max-change-rate`, `min-self-delegation` (>=1), `website` (optional), `details` (optional), `identity` ([keybase](https://keybase.io/) key hash, used to get validator logos in block explorers - optional), `security-contact` (email - optional).

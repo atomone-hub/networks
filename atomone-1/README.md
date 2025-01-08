@@ -4,6 +4,9 @@
 ![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--09--25T14%3A58%3A860541899Z-red?style=for-the-badge)
 
+> [!IMPORTANT]
+> The gentx files for `atomone-1` have been gathered in a dedicated repository, available here: [github.com/atomone-hub/atomone-validator-community](https://github.com/atomone-hub/atomone-validator-community).
+
 ## Proposed base genesis file
 
 The candidate base genesis file resulting from the currently on-chain govgen proposals [1](https://app.govgen.io/proposals/1) and [3](https://app.govgen.io/proposals/3) is available at https://atomone.fra1.digitaloceanspaces.com/genesis.json

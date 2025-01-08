@@ -5,6 +5,9 @@
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--02--27T14%3A00%3A00Z-red?style=for-the-badge)
 
 
+> [!IMPORTANT]
+> The gentx files for `govgen-1` have been gathered in a dedicated repository, available here: [github.com/atomone-hub/govgen-validators](https://github.com/atomone-hub/govgen-validators).
+
 ## Register in the Genesis
 
 To register your validator node in the `genesis.json` you just need to provide a signed `gentx` with an initial delegation of `1000000ugovgen`.

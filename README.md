@@ -10,6 +10,7 @@ For each network, you'll also find instructions on how to register your validato
 
 - [govgen-1](./govgen-1/README.md)
 - [atomone-1](./atomone-1/README.md)
+- [atomone-testnet-1](./atomone-testnet-1/README.md)
 
 👥 Join community
 

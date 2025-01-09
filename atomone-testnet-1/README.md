@@ -1,7 +1,7 @@
 **🔗 `atomone-testnet-1`**
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--testnet--1-blue?style=for-the-badge)
-![version: v2.0.0-alpha.1](https://img.shields.io/badge/version-v2.0.0--alpha.1-green?style=for-the-badge)
+<!-- ![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge) -->
 <!-- ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--09--25T14%3A58%3A860541899Z-red?style=for-the-badge) -->
 
  
@@ -37,7 +37,7 @@ $ atomoned genesis gentx your-key-name 1000000uatone \
 
 - You can install the proposed chain binary from github release page
 
-https://github.com/atomone-hub/atomone/releases/tag/v2.0.0-alpha.1
+https://github.com/atomone-hub/atomone/releases/tag/v1.0.0
 
 - Build from the source
 
@@ -46,7 +46,7 @@ You need to have [go](https://go.dev/doc/install) installed
 ```
 $ git clone https://github.com/atomone-hub/atomone.git
 $ cd atomone
-$ git checkout v2.0.0-alpha.1
+$ git checkout v1.0.0
 $ make install
 ```
 

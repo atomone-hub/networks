@@ -77,11 +77,11 @@ jobs:
 
           for f in ${GENTX_FILES}; do
             ADDR=$(cat $f | jq -r '.body.messages[0].delegator_address')
-            atomoned add-genesis-account $ADDR 10000000uatomone
+            atomoned genesis add-genesis-account $ADDR 10000000uatomone
           done
 
-          atomoned collect-gentxs --gentx-dir ./atomone-1/gentx
+          atomoned genesis collect-gentxs --gentx-dir ./atomone-1/gentx
 
       - name: Validate genesis
         run: |
-          atomoned validate-genesis
+          atomoned genesis validate-genesis

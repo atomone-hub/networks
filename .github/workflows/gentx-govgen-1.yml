@@ -2,15 +2,13 @@ name: "gentx validation govgen-1"
 
 on:
   pull_request: {}
-  # push:
-  #   paths:
-  #     - govgen-1/gentx/*.json
-  #   branches:
-  #     - "ci/gentx"
+  push:
+    paths:
+      - govgen-1/gentx/*.json
 
 env:
+  VERSION: "v1.0.1"
   GENTX_FILES: "./govgen-1/gentx/*.json"
-  GOVGEND_VERSION: "v1.0.1"
   GENESIS_URL: "https://atomone.fra1.digitaloceanspaces.com/govgen/govgen-1/genesis.json"
   MUST_STAKED_AMOUNT: "1000000"
 
@@ -68,7 +66,7 @@ jobs:
 
       - name: Download govgend
         run: |
-          wget -O /usr/local/bin/govgend https://github.com/atomone-hub/govgen/releases/download/${GOVGEND_VERSION}/govgend-${GOVGEND_VERSION}-linux-amd64
+          wget -O /usr/local/bin/govgend https://github.com/atomone-hub/govgen/releases/download/${VERSION}/govgend-${VERSION}-linux-amd64
           chmod +x /usr/local/bin/govgend
 
       - name: Collect gentxs
@@ -81,6 +79,7 @@ jobs:
             ADDR=$(cat $f | jq -r '.body.messages[0].delegator_address')
             govgend add-genesis-account $ADDR 10000000ugovgen
           done
+
           govgend collect-gentxs --gentx-dir ./govgen-1/gentx
 
       - name: Validate genesis

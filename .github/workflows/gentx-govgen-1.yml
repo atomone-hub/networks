@@ -51,7 +51,7 @@ jobs:
                 exit 1
               fi
 
-              if [ "${STALED_AMOUNT}" != "${MUST_STAKED_AMOUNT}" ]; then
+              if [ "${STAKED_AMOUNT}" != "${MUST_STAKED_AMOUNT}" ]; then
                 echo error="Invalid staked amount." >> ${GITHUB_OUTPUT}
                 exit 1
               fi

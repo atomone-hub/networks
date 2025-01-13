@@ -69,17 +69,21 @@ jobs:
           wget -O /usr/local/bin/atomoned https://github.com/atomone-hub/atomone/releases/download/${VERSION}/atomoned-${VERSION}-linux-amd64
           chmod +x /usr/local/bin/atomoned
 
-      - name: Collect gentxs
+      - name: Init DAEMON_HOME
         run: |
           atomoned init github-ci --chain-id atomone-1
 
           # wget -O $HOME/.atomone/config/genesis.json $GENESIS_URL
 
+      - name: Add genesis accounts
+        run: |
           for f in ${GENTX_FILES}; do
             ADDR=$(cat $f | jq -r '.body.messages[0].delegator_address')
             atomoned genesis add-genesis-account $ADDR 10000000uatomone
           done
 
+      - name: Collect gentxs
+        run: |
           atomoned genesis collect-gentxs --gentx-dir ./atomone-1/gentx
 
       - name: Validate genesis

@@ -77,7 +77,7 @@ jobs:
 
           # wget -O $HOME/.govgen/config/genesis.json $GENESIS_URL
 
-          for f in "${GENTX_FILES}"; do
+          for f in ${GENTX_FILES}; do
             ADDR=$(cat $f | jq -r '.body.messages[0].delegator_address')
             govgend add-genesis-account $ADDR 10000000ugovgen
           done

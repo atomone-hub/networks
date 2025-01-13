@@ -9,6 +9,7 @@ on:
   #     - "ci/gentx"
 
 env:
+  GENTX_FILES: "./govgen-1/gentx/*.json"
   GOVGEND_VERSION: "v1.0.1"
   GENESIS_URL: "https://atomone.fra1.digitaloceanspaces.com/govgen/govgen-1/genesis.json"
   MUST_STAKED_AMOUNT: "1000000"
@@ -29,7 +30,7 @@ jobs:
       - name: Check gentx values
         run: |
           for f in ${{ steps.files.outputs.all }}; do
-            if [[ "$f" == "*gentx/*.json" ]]; then
+            if [[ "$f" == "${GENTX_FILES}" ]]; then
               echo "checking file: $f"
               COMMISSION_RATE=$(cat $f | jq -r '.body.messages[0].commission.rate')
               COMMISSION_MAX_RATE=$(cat $f | jq -r '.body.messages[0].commission.max_rate')
@@ -76,7 +77,7 @@ jobs:
 
           # wget -O $HOME/.govgen/config/genesis.json $GENESIS_URL
 
-          for f in "govgen-1/gentx/*.json"; do
+          for f in "${GENTX_FILES}"; do
             ADDR=$(cat $f | jq -r '.body.messages[0].delegator_address')
             govgend add-genesis-account $ADDR 10000000ugovgen
           done

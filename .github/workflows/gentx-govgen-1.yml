@@ -1,8 +1,7 @@
 name: "gentx validation govgen-1"
 
 on:
-  pull_request: {}
-  push:
+  pull_request:
     paths:
       - govgen-1/gentx/*.json
 

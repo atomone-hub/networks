@@ -2,10 +2,8 @@ name: "gentx validation atomone-1"
 
 on:
   pull_request:
-    {}
-
-    # paths:
-    #   - atomone-1/gentx/*.json
+    paths:
+      - atomone-1/gentx/*.json
 
 env:
   VERSION: "v1.0.0"

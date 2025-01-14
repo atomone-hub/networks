@@ -1,0 +1,44 @@
+name: "gentx validation atomone-testnet-1"
+
+on:
+  pull_request:
+    paths:
+      - atomone-testnet-1/gentx/*.json
+
+env:
+  VERSION: "v1.0.0"
+  GENTX_FILES: "./atomone-testnet-1/gentx/*.json"
+  # GENESIS_URL: "https://atomone.fra1.digitaloceanspaces.com/atomone/atomone-1/genesis.json"
+
+jobs:
+  validate-gentx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download atomoned
+        run: |
+          wget -O /usr/local/bin/atomoned https://github.com/atomone-hub/atomone/releases/download/${VERSION}/atomoned-${VERSION}-linux-amd64
+          chmod +x /usr/local/bin/atomoned
+
+      - name: Init DAEMON_HOME
+        run: |
+          atomoned init github-ci --chain-id atomone-testnet-1
+
+          # wget -O $HOME/.atomone/config/genesis.json $GENESIS_URL
+
+      - name: Add genesis accounts
+        run: |
+          for f in ${GENTX_FILES}; do
+            ADDR=$(cat $f | jq -r '.body.messages[0].delegator_address')
+            atomoned genesis add-genesis-account $ADDR 10000000uatone
+          done
+
+      - name: Collect gentxs
+        run: |
+          atomoned genesis collect-gentxs --gentx-dir ./atomone-testnet-1/gentx
+
+      - name: Validate genesis
+        run: |
+          atomoned genesis validate-genesis

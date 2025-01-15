@@ -1,10 +1,12 @@
 **🔗 `atomone-testnet-1`**
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--testnet--1-blue?style=for-the-badge)
-<!-- ![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge) -->
-<!-- ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--09--25T14%3A58%3A860541899Z-red?style=for-the-badge) -->
+![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--01--22T14%3A00%3A000000000Z-red?style=for-the-badge)
 
- 
+> [!WARNING]
+> Gentx submission is open until January 19th 2025, 23:59 UTC.
+
 > [!NOTE]
 > The atomone-testnet-1 is a community initiative designed to test and validate the foundational components of the AtomOne blockchain.
 > Its primary purpose is to provide a controlled environment for validators, developers, and community members to explore, test and optimize network functionalities before their official deployment/release.
@@ -16,7 +18,16 @@ To register your validator node in the `genesis.json` you will need to provide
 
 The `commission-rate`, `commission-max-rate`, `commission-max-change-rate` are free to set to the value you want, this values are just for example, note that 0.05 is 5%.
 
-```
+```sh
+# Init node
+$ atomoned init your-moniker --chain-id atomone-testnet-1
+
+# Create key, remember to store your mnemonic
+$ atomoned keys add your-key-name
+
+# Set initial balance
+$ atomoned genesis add-genesis-account your-key-name 10000000uatone
+
 # Create the gentx
 $ atomoned genesis gentx your-key-name 1000000uatone \
   --node-id $(atomoned tendermint show-node-id) \

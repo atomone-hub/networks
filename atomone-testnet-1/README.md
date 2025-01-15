@@ -4,6 +4,9 @@
 ![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--01--22T14%3A00%3A000000000Z-red?style=for-the-badge)
 
+> [!WARNING]
+> Gentx submission is open until January 19th 2025, 23:59 UTC.
+
 > [!NOTE]
 > The atomone-testnet-1 is a community initiative designed to test and validate the foundational components of the AtomOne blockchain.
 > Its primary purpose is to provide a controlled environment for validators, developers, and community members to explore, test and optimize network functionalities before their official deployment/release.

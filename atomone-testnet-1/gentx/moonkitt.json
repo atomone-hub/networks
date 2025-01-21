@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "Moonkitt",
+          "identity": "022AF2C303C88B9C",
+          "website": "https://moonkitt.com",
+          "security_contact": "security@moonkitt.com",
+          "details": "Find us on X https://x.com/moonkitt_lab | TG https://t.me/moonkitt_lab"
+        },
+        "commission": {
+          "rate": "0.050000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "atone14pvura4yw3pf2ceppg2kzlqxsjpdwvtfqthjw2",
+        "validator_address": "atonevaloper14pvura4yw3pf2ceppg2kzlqxsjpdwvtfzkumyj",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "nKIeDup1Hx2a5aLa3oqRo/IlY7HTppPE72SGN4ko4lQ="
+        },
+        "value": {
+          "denom": "uatone",
+          "amount": "1000000"
+        }
+      }
+    ],
+    "memo": "cd1b941639898c6c9f7a2d047f52525c9901a65d@0.0.0.0:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AmkMyokPVlO1qCo2efUqm0eetLA+V4xfachZXygw7ZY6"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "Fg7JNjyWZvyxgurupC/Xs95onnB0O7e9SvE7s6QjdSpMjKpUrSFhuLryctGgYD/X16dM7NRSubHqe6D2x1Dn+w=="
+  ]
+}

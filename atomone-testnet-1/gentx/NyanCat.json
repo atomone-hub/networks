@@ -1,0 +1,50 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "NyanCat",
+          "identity": "09D4624417E37ABD",
+          "website": "https://twitter.com/o___victor",
+          "security_contact": "nyancat.validator@gmail.com",
+          "details": "Your reliable crypto validator. I ensure the security and efficiency of the network by verifying and validating transactions"
+        },
+        "commission": {
+          "rate": "0.050000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.050000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "atone1drrywqmq7ue2qsrtgxgpuysyer8j30hlmw5e0x",
+        "validator_address": "atonevaloper1drrywqmq7ue2qsrtgxgpuysyer8j30hlenls97",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "dVHsHkY7MOtW671vRcfWsaO6n/nOfbXquDok0YbJq7M="
+        },
+        "value": { "denom": "uatone", "amount": "1000000" }
+      }
+    ],
+    "memo": "dd0fe3dc959b051833b958aec70fb85b7b340e41@37.60.255.34:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AqxcKCH6nuhOwVH6YZekCJspXS+fnRg9QwLTM9aGEZzb"
+        },
+        "mode_info": { "single": { "mode": "SIGN_MODE_DIRECT" } },
+        "sequence": "0"
+      }
+    ],
+    "fee": { "amount": [], "gas_limit": "200000", "payer": "", "granter": "" },
+    "tip": null
+  },
+  "signatures": [
+    "2Pn0F1AiZhr8NRwxeSzO23pOhnDAw0B1ExmAXv/cFjVKWlJXh0yBu7FOfiKqIeymw2qVKBRRJgNpZ/LiXb6OJA=="
+  ]
+}

@@ -2,10 +2,12 @@
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--testnet--1-blue?style=for-the-badge)
 ![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--01--22T14%3A00%3A000000000Z-red?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--01--27T14%3A00%3A000000000Z-red?style=for-the-badge)
 
-> [!WARNING]
-> Gentx submission is open until January 19th 2025, 23:59 UTC.
+> [!IMPORTANT]
+> All gentxs have been collected.
+> You can find the genesis file here: https://atomone.fra1.digitaloceanspaces.com/atomone-testnet-1/genesis.json
+> md5sum: 31b82ec57ab72010288dd89cebb91bb5
 
 > [!NOTE]
 > The atomone-testnet-1 is a community initiative designed to test and validate the foundational components of the AtomOne blockchain.

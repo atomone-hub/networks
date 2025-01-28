@@ -8,7 +8,7 @@
 > All gentxs have been collected.
 > You can find the genesis file here: https://atomone.fra1.digitaloceanspaces.com/atomone-testnet-1/genesis.json
 > 
-> md5sum: `9a499b6c7a66ca6db4220c95dffe2764`
+> md5sum: `0bcd581f8470801f7c17bad82ae3f3df`
 
 > [!NOTE]
 > The atomone-testnet-1 is a community initiative designed to test and validate the foundational components of the AtomOne blockchain.

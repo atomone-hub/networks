@@ -2,7 +2,7 @@
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--testnet--1-blue?style=for-the-badge)
 ![version: v1.0.0](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--01--27T14%3A00%3A000000000Z-red?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--01--28T14%3A00%3A000000000Z-red?style=for-the-badge)
 
 > [!IMPORTANT]
 > All gentxs have been collected.

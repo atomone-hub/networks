@@ -2,40 +2,7 @@
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--1-blue?style=for-the-badge)
 ![version: v1.0.1](https://img.shields.io/badge/version-v1.0.1-green?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--09--25T14%3A58%3A860541899Z-red?style=for-the-badge)
-
-> [!IMPORTANT]
-> The gentx files for `atomone-1` have been gathered in a dedicated repository, available here: [github.com/atomone-hub/atomone-validator-community](https://github.com/atomone-hub/atomone-validator-community).
-
-## Proposed base genesis file
-
-The candidate base genesis file resulting from the currently on-chain govgen proposals [1](https://app.govgen.io/proposals/1) and [3](https://app.govgen.io/proposals/3) is available at https://atomone.fra1.digitaloceanspaces.com/genesis.json
-
-This genesis file is of course missing the validators gentxs, which will need to be collected and added to the genesis to be able to launch the chain.
-
- For more information on how the genesis was built please also look [here](https://github.com/atomone-hub/govbox/blob/master/PROP-001.md).
-
-## Register in the Genesis
-
-To register your validator node in the `genesis.json` you will need to provide a signed `gentx` with an initial delegation of at least `1000000uatone`.
-To create your own genesis transaction (`gentx`) you will have to choose the following parameters for your validator: `commission-rate` (>=0.05), `commission-max-rate`, `commission-max-change-rate`, `min-self-delegation` (>=1), `website` (optional), `details` (optional), `identity` ([keybase](https://keybase.io) key hash, used to get validator logos in block explorers - optional), `security-contact` (email - optional).
-
-The `commission-rate`, `commission-max-rate`, `commission-max-change-rate` are free to set to the value you want, this values are just for example, note that 0.05 is 5%.
-
-```sh
-# Create the gentx
-$ atomoned genesis gentx your-key-name 1000000uatone \
-  --node-id $(atomoned tendermint show-node-id) \
-  --chain-id atomone-1 \
-  --commission-rate 0.05 \
-  --commission-max-rate 0.1 \
-  --commission-max-change-rate 0.05 \
-  --min-self-delegation 1 \
-  --website "https://foo.network" \
-  --details "My validator" \
-  --identity "id-from-keybase" \
-  --security-contact "security@foo.network"
-```
+![genesis.json](https://atomone.fra1.digitaloceanspaces.com/genesis.json)
 
 ## Operate the node
 

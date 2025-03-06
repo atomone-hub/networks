@@ -25,7 +25,7 @@ $ make install
 
 ### Recommendations
 
-| minimum-gas-prices | 0.001uatone                                         |
+| minimum-gas-prices | 0.025uatone                                          |
 |--------------------|------------------------------------------------------|
 | seeds              | see [./seeds.txt](./seeds.txt)                       |
 | persistent_peers   | see [./persistent_peers.txt](./persistent_peers.txt) |

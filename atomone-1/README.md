@@ -2,7 +2,11 @@
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--1-blue?style=for-the-badge)
 ![version: v1.1.1](https://img.shields.io/badge/version-v1.1.1-green?style=for-the-badge)
-![genesis.json](https://atomone.fra1.digitaloceanspaces.com/genesis.json)
+
+## Versions
+
+- [Security upgrade v1.1.1](./v1.1.1.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1) (current)
+- [Genesis](./genesis.md) - [v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
 
 ## Operate the node
 
@@ -22,6 +26,13 @@ $ cd atomone
 $ git checkout v1.1.1
 $ make install
 ```
+
+### Setup [genesis.json](https://atomone.fra1.digitaloceanspaces.com/genesis.json)
+
+```bash
+$ wget -O $HOME/.atomone/config/genesis.json https://atomone.fra1.digitaloceanspaces.com/genesis.json
+```
+
 
 ### Recommendations
 

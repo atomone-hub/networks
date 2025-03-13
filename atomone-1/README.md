@@ -1,11 +1,12 @@
 # 🔗 `atomone-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--1-blue?style=for-the-badge)
-![version: v1.1.1](https://img.shields.io/badge/version-v1.1.1-green?style=for-the-badge)
+![version: v1.1.2](https://img.shields.io/badge/version-v1.1.2-green?style=for-the-badge)
 
 ## Versions
 
-- [Security upgrade v1.1.1](./v1.1.1.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1) (current)
+- [Security upgrade v1.1.2](./v1.1.2.md) - [v1.1.2](https://github.com/atomone-hub/atomone/releases/tag/v1.1.2) (current)
+- [Security upgrade v1.1.1](./v1.1.1.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1)
 - [Genesis](./genesis.md) - [v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
 
 ## Operate the node
@@ -14,7 +15,7 @@
 
 - You can install the proposed chain binary from github release page
 
-https://github.com/atomone-hub/atomone/releases/tag/v1.1.1
+https://github.com/atomone-hub/atomone/releases/tag/v1.1.2
 
 - Build from the source
 
@@ -23,7 +24,7 @@ You need to have [go](https://go.dev/doc/install) installed
 ```sh
 $ git clone https://github.com/atomone-hub/atomone.git
 $ cd atomone
-$ git checkout v1.1.1
+$ git checkout v1.1.2
 $ make install
 ```
 

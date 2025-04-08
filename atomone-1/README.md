@@ -5,9 +5,9 @@
 
 ## Versions
 
-- [Security upgrade v1.1.2](./v1.1.2.md) - [v1.1.2](https://github.com/atomone-hub/atomone/releases/tag/v1.1.2) (current)
-- [Security upgrade v1.1.1](./v1.1.1.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1)
-- [Genesis](./genesis.md) - [v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
+- [Security upgrade v1.1.2](./upgrades/v1.1.2.md) - [v1.1.2](https://github.com/atomone-hub/atomone/releases/tag/v1.1.2) (current)
+- [Security upgrade v1.1.1](./upgrades/v1.1.1.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1)
+- [Genesis](./upgrades/genesis.md) - [v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
 
 ## Operate the node
 

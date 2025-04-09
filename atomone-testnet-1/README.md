@@ -5,6 +5,7 @@
 
 ## Versions
 
+- [v2.0.0-rc1](./upgrades/v2.0.0-rc1.md) - [v2.0.0-rc1](https://github.com/atomone-hub/atomone/releases/tag/v2.0.0-rc1)
 - [Security upgrade v1.1.2](./upgrades/v1.1.2.md) - [v1.1.2](https://github.com/atomone-hub/atomone/releases/tag/v1.1.2) (current)
 - [Genesis](./upgrades/genesis.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1)
 

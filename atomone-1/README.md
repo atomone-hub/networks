@@ -1,11 +1,12 @@
 # 🔗 `atomone-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-atomone--1-blue?style=for-the-badge)
-![version: v1.1.2](https://img.shields.io/badge/version-v1.1.2-green?style=for-the-badge)
+![version: v3.0.3](https://img.shields.io/badge/version-v3.0.3-green?style=for-the-badge)
 
 ## Versions
 
-- [v2.0.0](./upgrades/v2.0.0.md) - [v2.0.0](https://github.com/atomone-hub/atomone/releases/tag/v2.0.0) (current)
+- [v3.0.3](./upgrades/v3.0.3.md) - [v3.0.3](https://github.com/atomone-hub/atomone/releases/tag/v3.0.3) (current)
+- [v2.0.0](./upgrades/v2.0.0.md) - [v2.0.0](https://github.com/atomone-hub/atomone/releases/tag/v2.0.0)
 - [Security upgrade v1.1.2](./upgrades/v1.1.2.md) - [v1.1.2](https://github.com/atomone-hub/atomone/releases/tag/v1.1.2)
 - [Security upgrade v1.1.1](./upgrades/v1.1.1.md) - [v1.1.1](https://github.com/atomone-hub/atomone/releases/tag/v1.1.1)
 - [Genesis](./upgrades/genesis.md) - [v1.0.0](https://github.com/atomone-hub/atomone/releases/tag/v1.0.0)
@@ -16,7 +17,7 @@
 
 - You can install the proposed chain binary from github release page
 
-https://github.com/atomone-hub/atomone/releases/tag/v2.0.0
+https://github.com/atomone-hub/atomone/releases/tag/v3.0.3
 
 - Build from the source
 
@@ -25,7 +26,7 @@ You need to have [go](https://go.dev/doc/install) installed
 ```sh
 $ git clone https://github.com/atomone-hub/atomone.git
 $ cd atomone
-$ git checkout v2.0.0
+$ git checkout v3.0.3
 $ make install
 ```
 
@@ -38,7 +39,7 @@ $ wget -O $HOME/.atomone/config/genesis.json https://atomone.fra1.digitaloceansp
 
 ### Recommendations
 
-| minimum-gas-prices | 0.025uatone,0.225uphoton                             |
+|                    |                              |
 |--------------------|------------------------------------------------------|
 | seeds              | see [./seeds.txt](./seeds.txt)                       |
 | persistent_peers   | see [./persistent_peers.txt](./persistent_peers.txt) |

@@ -9,7 +9,7 @@
 
 ## Proposed base genesis file
 
-The candidate base genesis file resulting from the currently on-chain govgen proposals [1](https://app.govgen.io/proposals/1) and [3](https://app.govgen.io/proposals/3) is available at https://atomone.fra1.digitaloceanspaces.com/genesis.json
+The candidate base genesis file resulting from the currently on-chain govgen proposals [1](https://app.govgen.io/proposals/1) and [3](https://app.govgen.io/proposals/3) is available at https://atomone.fra1.digitaloceanspaces.com/atomone-1/genesis.json
 
 This genesis file is of course missing the validators gentxs, which will need to be collected and added to the genesis to be able to launch the chain.
 

@@ -29,10 +29,10 @@ $ git checkout v3.0.1
 $ make install
 ```
 
-### Setup [genesis.json](https://atomone.fra1.digitaloceanspaces.com/genesis.json)
+### Setup [genesis.json](https://atomone.fra1.digitaloceanspaces.com/atomone-testnet-1/genesis.json)
 
 ```bash
-$ wget -O $HOME/.atomone/config/genesis.json https://atomone.fra1.digitaloceanspaces.com/genesis.json
+$ wget -O $HOME/.atomone/config/genesis.json https://atomone.fra1.digitaloceanspaces.com/atomone-testnet-1/genesis.json
 ```
 
 
